@@ -16,9 +16,9 @@ const NavBar = () => {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Box bg="black" color="white" px={4}>
+    <Box bg="black" color="white" px={4} >
       <Flex justifyContent="space-between" align="center" w="100%" py={4}>
-        <Heading as="h2" size="md" fontWeight="bold">
+        <Heading as="h2" fontSize="18px" fontWeight="bold">
           Desmond Egya
         </Heading>
 
@@ -26,7 +26,8 @@ const NavBar = () => {
         <HStack
           as="nav"
           spacing="25px"
-          display={{ base: "none", md: "flex" }} // Hide on mobile
+          display={{ base: "none", md: "flex" }} 
+          fontSize="16px"
         >
           <Link href="#">HOME</Link>
           <Link href="#">PROJECTS</Link>
@@ -41,6 +42,9 @@ const NavBar = () => {
           variant="outline"
           display={{ base: "flex", md: "none" }} // Show on mobile
           onClick={onToggle}
+          bg="gray.900"
+          borderRadius="full"
+          border="none"
         />
       </Flex>
 
