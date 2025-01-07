@@ -1,37 +1,34 @@
-import {
-  Box,
-  Heading,
-  Text,
-  HStack,
-  Flex,
-} from "@chakra-ui/react";
-import {
-  SiReact,
-  SiPython,
-  SiTypescript,
-  SiHtml5,
-  SiCss3,
-  SiGit,
-  SiDjango,
-  SiMysql,
-  SiJavascript,
-} from "react-icons/si";
+import { Box, Heading, Text, HStack, Flex } from "@chakra-ui/react";
+import react from "../assets/react.svg";
+import python from "../assets/python.svg";
+import javascript from "../assets/javascript.svg";
+import html from "../assets/html.svg";
+import css from "../assets/css.svg";
+import git from "../assets/git.svg";
+import django from "../assets/django.svg";
+import mysql from "../assets/mysql.svg";
+import typescript from "../assets/typescript.svg";
 
 const skills = [
-  { name: "React", icon: SiReact },
-  { name: "Python", icon: SiPython },
-  { name: "TypeScript", icon: SiTypescript },
-  { name: "HTML", icon: SiHtml5 },
-  { name: "CSS", icon: SiCss3 },
-  { name: "Git", icon: SiGit },
-  { name: "Django", icon: SiDjango },
-  { name: "MySQL", icon: SiMysql },
-  { name: "JavaScript", icon: SiJavascript },
+  { name: "React", icon: react },
+  { name: "Python", icon: python },
+  { name: "TypeScript", icon: typescript },
+  { name: "HTML", icon: html },
+  { name: "CSS", icon: css },
+  { name: "Git", icon: git },
+  { name: "Django", icon: django },
+  { name: "MySQL", icon: mysql },
+  { name: "JavaScript", icon: javascript },
 ];
 
 const Skills = () => {
   return (
-    <Box id="skills" mx="auto"  alignContent="center" pt={{base: "50px", md:"100px"}}>
+    <Box
+      id="skills"
+      mx="auto"
+      alignContent="center"
+      pt={{ base: "50px", md: "100px" }}
+    >
       <Heading
         textAlign="center"
         color="#A3A3A3"
@@ -47,7 +44,7 @@ const Skills = () => {
         wrap="wrap"
         justify="center"
         rowGap="30px"
-        columnGap={{base: "0px", md: "50px", lg:"80px" }}
+        columnGap={{ base: "0px", md: "50px", lg: "80px" }}
         direction="row"
       >
         {skills.map((skill) => (
@@ -65,7 +62,8 @@ const Skills = () => {
             align="center"
           >
             <Box
-              as={skill.icon}
+              as="img"
+              src={skill.icon}
               boxSize="32px"
               color="#A3A3A3"
               _hover={{ color: "white", transform: "scale(1.1)" }}
