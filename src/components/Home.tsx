@@ -4,7 +4,7 @@ import { FaArrowCircleDown } from "react-icons/fa";
 const Home = () => {
   return (
     <Flex
-    id="home"
+      id="home"
       flexDirection="column"
       justify="space-between"
       paddingTop="30px"
@@ -12,7 +12,7 @@ const Home = () => {
     >
       <Box>
         <Text
-          fontWeight="bold"
+          fontWeight="500"
           maxW="870px"
           paddingTop="32px"
           fontSize={{ base: "53px", md: "100px", lg: "144px" }}
