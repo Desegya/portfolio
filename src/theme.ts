@@ -1,5 +1,4 @@
 import { extendTheme } from "@chakra-ui/react";
-import "@fontsource/roboto";
 
 const theme = extendTheme({
   fonts: {
@@ -9,7 +8,7 @@ const theme = extendTheme({
   styles: {
     global: {
       body: {
-        fontFamily: `'Roboto', sans-serif`,
+        fontFamily: `'Roboto', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif`,
         bg: "black", 
         color: "white", 
       },
