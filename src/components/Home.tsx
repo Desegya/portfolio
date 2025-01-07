@@ -35,7 +35,7 @@ const Home = () => {
       <Box textAlign="right">
         <Text
           fontSize={{ base: "14px", md: "16px" }}
-          paddingBottom={{ base: "20px", md: "0" }}
+          paddingBottom="20px"
           textTransform="uppercase"
           lineHeight="22px"
           color="#FFFFFF"
@@ -43,8 +43,8 @@ const Home = () => {
           Available for full time & freelance
         </Text>
         <HStack justify="flex-end">
-          <FaArrowCircleDown />
-          <FaArrowCircleDown />
+          <FaArrowCircleDown size="26px" />
+          <FaArrowCircleDown size="26px" />
         </HStack>
       </Box>
     </Flex>
