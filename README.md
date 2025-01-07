@@ -1,50 +1,26 @@
-# React + TypeScript + Vite
+# Desmond Egya - Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website! This site showcases my skills, projects, and background as a full-stack developer.
 
-Currently, two official plugins are available:
+## About This Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is a personal website built using **React**, **Chakra UI**, and **TypeScript**. It includes the following sections:
 
-## Expanding the ESLint configuration
+- **Home**: Introduction and overview of my work.
+- **Projects**: A display of the projects I've worked on.
+- **Skills**: A list of the technologies and tools I'm proficient in.
+- **About Me**: Information about my background and experience.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Features
 
-- Configure the top-level `parserOptions` property like this:
+- **Responsive Design**: The website adapts to different screen sizes (desktop, tablet, and mobile).
+- **Modern UI**: A clean and minimal design using Chakra UI components.
+- **Smooth Navigation**: Links to various sections of the website, including scrolling animations.
+  
+## Technologies Used
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **React** - JavaScript library for building user interfaces.
+- **TypeScript** - Superset of JavaScript for type safety.
+- **Chakra UI** - A simple and modular component library for building React UIs.
+- **React Icons** - For incorporating icons into the design.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
