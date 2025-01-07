@@ -1,12 +1,12 @@
 import { Box } from '@chakra-ui/react';
 import NavBar from './NavBar';
 
-interface LayoutProps {
+interface Props {
   children: React.ReactNode;
   scrollToTop: () => void;
 }
 
-const Layout = ({ children, scrollToTop }: LayoutProps) => {
+const Layout = ({ children, scrollToTop }: Props) => {
   return (
     <Box  px={{base: "10px", md: "40px"}} py={{base: "10px", md:"23px"}}>
       {/* Render the NavBar */}
