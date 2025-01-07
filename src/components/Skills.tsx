@@ -1,8 +1,6 @@
 import {
   Box,
   Heading,
-  SimpleGrid,
-  VStack,
   Text,
   HStack,
   Flex,
@@ -33,7 +31,7 @@ const skills = [
 
 const Skills = () => {
   return (
-    <Box mx="auto" px={{ base: "20px", md: 4 }} py="60px">
+    <Box mx="auto" px={{ base: "20px", md: 4 }} mt="100px" alignContent="center" py="60px">
       <Heading
         textAlign="center"
         color="#A3A3A3"
@@ -47,15 +45,16 @@ const Skills = () => {
       </Heading>
       <Flex
         wrap="wrap"
-        justify="center" // Centers items horizontally
-        gap="30px" // This will add spacing between the items
+        justify="center"
+        rowGap="30px"
+        columnGap={{base: "0px", md: "50px", lg:"80px" }}
         direction="row"
       >
         {skills.map((skill) => (
           <HStack
             key={skill.name}
             w={{
-              base: "calc(100% / 2 - 30px)",
+              base: "calc(100% / 2)",
               md: "calc(100% / 3 - 40px)",
               lg: "calc(100% / 4 - 40px)",
               xl: "calc(100% / 6 - 40px)",
