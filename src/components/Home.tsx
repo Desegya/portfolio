@@ -4,6 +4,7 @@ import { FaArrowCircleDown } from "react-icons/fa";
 const Home = () => {
   return (
     <Flex
+    id="home"
       flexDirection="column"
       justify="space-between"
       paddingTop="30px"
@@ -43,8 +44,8 @@ const Home = () => {
           Available for full time & freelance
         </Text>
         <HStack justify="flex-end">
-          <FaArrowCircleDown size="26px" />
-          <FaArrowCircleDown size="26px" />
+          <FaArrowCircleDown color="#AAAAAA" size="26px" />
+          <FaArrowCircleDown color="#AAAAAA" size="26px" />
         </HStack>
       </Box>
     </Flex>

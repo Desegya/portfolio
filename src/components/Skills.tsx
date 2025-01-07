@@ -31,7 +31,7 @@ const skills = [
 
 const Skills = () => {
   return (
-    <Box mx="auto" px={{ base: "20px", md: 4 }} mt="100px" alignContent="center" py="60px">
+    <Box id="skills" mx="auto" px={{ base: "20px", md: 4 }}  alignContent="center" py="100px">
       <Heading
         textAlign="center"
         color="#A3A3A3"

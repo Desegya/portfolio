@@ -29,10 +29,10 @@ const NavBar = () => {
           display={{ base: "none", md: "flex" }}
           fontSize="16px"
         >
-          <Link href="#">HOME</Link>
-          <Link href="#">PROJECTS</Link>
-          <Link href="#">SKILLS</Link>
-          <Link href="#">ABOUT ME</Link>
+          <Link href="#home">HOME</Link>
+          <Link href="#projects">PROJECTS</Link>
+          <Link href="#skills">SKILLS</Link>
+          <Link href="#about">ABOUT ME</Link>
         </HStack>
 
         {/* Hamburger Icon */}

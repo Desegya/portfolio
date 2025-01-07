@@ -4,7 +4,8 @@ import myPhoto from "../assets/me.jpeg";
 const About = () => {
   return (
     <Flex
-      mt={{ base: "150px", md: "200px", lg: "290px" }}
+    id="about"
+      py={{ base: "150px", md: "200px", lg: "290px" }}
       direction={{ base: "column", md: "row" }}
       justifySelf="center"
       justify="space-around"
