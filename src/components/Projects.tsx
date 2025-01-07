@@ -13,7 +13,7 @@ import { RiLinkM } from "react-icons/ri";
 
 const Projects = () => {
   return (
-    <Box id="projects" py="135px" justifySelf="center" maxW="1100px" px={{ base: "20px", md: 4 }}>
+    <Box id="projects" pt="135px" justifySelf="center" maxW="1100px" px={{ base: "20px", md: 4 }}>
       <Heading
         textAlign="center"
         color="#A3A3A3"

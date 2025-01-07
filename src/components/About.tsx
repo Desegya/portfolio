@@ -5,7 +5,7 @@ const About = () => {
   return (
     <Flex
     id="about"
-      py={{ base: "150px", md: "200px", lg: "290px" }}
+      pt={{ base: "150px", md: "200px", lg:"250px", xl: "250px" }}
       direction={{ base: "column", md: "row" }}
       justifySelf="center"
       justify="space-around"
@@ -53,6 +53,7 @@ const About = () => {
           borderRadius="full"
           bg="none"
           variant="outline"
+          color="white"
           border="1px solid white"
         >
           Let's talk

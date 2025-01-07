@@ -19,10 +19,12 @@ const Footer = () => {
   }, []);
   return (
     <Box mt={{ base: "116px", md: "200px", lg: "253px" }} mb="15px">
-      <HStack justify="flex-end">
-        <FaArrowCircleUp color="#AAAAAA" size="26px" />
-        <FaArrowCircleUp color="#AAAAAA" size="26px" />
-      </HStack>
+      <Link href="#home">
+        <HStack justify="flex-end">
+          <FaArrowCircleUp color="#AAAAAA" size="26px" />
+          <FaArrowCircleUp color="#AAAAAA" size="26px" />
+        </HStack>
+      </Link>
       <Flex align="flex-end" justify="space-between" mt="18px">
         <HStack gap="32px">
           <Text>© {new Date().getFullYear()} </Text>

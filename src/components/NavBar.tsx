@@ -40,9 +40,10 @@ const NavBar = () => {
           icon={isOpen ? <IoCloseSharp /> : <RxHamburgerMenu />}
           aria-label="Toggle Navigation"
           variant="outline"
-          display={{ base: "flex", md: "none" }} // Show on mobile
+          display={{ base: "flex", md: "none" }} 
           onClick={onToggle}
           bg="gray.900"
+          color="white"
           borderRadius="full"
           border="none"
         />
@@ -52,7 +53,7 @@ const NavBar = () => {
       <Collapse in={isOpen} animateOpacity>
         <VStack
           as="nav"
-          spacing={4}
+  
           textAlign="right"
           p={4}
           rounded="md"
