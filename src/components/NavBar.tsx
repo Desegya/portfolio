@@ -12,11 +12,23 @@ import {
 import { RxHamburgerMenu } from "react-icons/rx";
 import { IoCloseSharp } from "react-icons/io5";
 
-const NavBar = () => {
+interface Props {
+  scrollToTop: () => void;
+}
+
+const NavBar = ({ scrollToTop }: Props) => {
   const { isOpen, onToggle } = useDisclosure();
 
   return (
-    <Box bg="black" color="white" px={4}>
+    <Box
+      bg="black"
+      color="white"
+      position="fixed"
+      top="0"
+      right={4}
+      left={4}
+      zIndex="100"
+    >
       <Flex justifyContent="space-between" align="center" w="100%" py={4}>
         <Heading as="h2" fontSize="18px" fontWeight="bold">
           Desmond Egya
@@ -29,7 +41,7 @@ const NavBar = () => {
           display={{ base: "none", md: "flex" }}
           fontSize="16px"
         >
-          <Link href="#home">HOME</Link>
+          <Link onClick={scrollToTop}>HOME</Link>
           <Link href="#projects">PROJECTS</Link>
           <Link href="#skills">SKILLS</Link>
           <Link href="#about">ABOUT ME</Link>
@@ -40,7 +52,7 @@ const NavBar = () => {
           icon={isOpen ? <IoCloseSharp /> : <RxHamburgerMenu />}
           aria-label="Toggle Navigation"
           variant="outline"
-          display={{ base: "flex", md: "none" }} 
+          display={{ base: "flex", md: "none" }}
           onClick={onToggle}
           bg="gray.900"
           color="white"
@@ -53,7 +65,6 @@ const NavBar = () => {
       <Collapse in={isOpen} animateOpacity>
         <VStack
           as="nav"
-  
           textAlign="right"
           p={4}
           rounded="md"

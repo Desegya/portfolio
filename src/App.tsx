@@ -1,24 +1,28 @@
-import { Box } from '@chakra-ui/react'
+
 import './App.css'
-import NavBar from './components/NavBar'
+
 import Home from './components/Home'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
 import About from './components/About'
 import Footer from './components/Footer'
+import Layout from './components/Layout'
 
 function App() {
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
  
 
   return (
-    <Box  px={{base: "10px", md: "40px"}} py={{base: "10px", md:"23px"}}>
-      <NavBar />
+    <Layout scrollToTop={scrollToTop} >
+      
       <Home />
       <Projects />
       <Skills />
       <About />
-      <Footer />
-    </Box>
+      <Footer scrollToTop={scrollToTop} />
+    </Layout>
   )
 }
 

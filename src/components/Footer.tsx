@@ -2,7 +2,11 @@ import { Box, Flex, HStack, Stack, Link, Text } from "@chakra-ui/react";
 import { useEffect, useState } from "react";
 import { FaArrowCircleUp } from "react-icons/fa";
 
-const Footer = () => {
+interface Props {
+  scrollToTop: () => void;
+}
+
+const Footer = ({ scrollToTop }: Props) => {
   const [time, setTime] = useState<string>("");
 
   useEffect(() => {
@@ -19,12 +23,10 @@ const Footer = () => {
   }, []);
   return (
     <Box mt={{ base: "116px", md: "200px", lg: "253px" }} mb="15px">
-      <Link href="#home">
-        <HStack justify="flex-end">
+        <HStack onClick={scrollToTop} justify="flex-end">
           <FaArrowCircleUp color="#AAAAAA" size="26px" />
           <FaArrowCircleUp color="#AAAAAA" size="26px" />
         </HStack>
-      </Link>
       <Flex align="flex-end" justify="space-between" mt="18px">
         <HStack gap="32px">
           <Text>© {new Date().getFullYear()} </Text>

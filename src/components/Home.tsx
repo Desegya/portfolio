@@ -1,4 +1,4 @@
-import { Box, Flex, HStack, Text } from "@chakra-ui/react";
+import { Box, Flex, HStack, Link, Text } from "@chakra-ui/react";
 import { FaArrowCircleDown } from "react-icons/fa";
 
 const Home = () => {
@@ -8,7 +8,7 @@ const Home = () => {
       flexDirection="column"
       justify="space-between"
       paddingTop="30px"
-      height="90vh"
+      height="80vh"
     >
       <Box>
         <Text
@@ -43,10 +43,12 @@ const Home = () => {
         >
           Available for full time & freelance
         </Text>
-        <HStack justify="flex-end">
-          <FaArrowCircleDown color="#AAAAAA" size="26px" />
-          <FaArrowCircleDown color="#AAAAAA" size="26px" />
-        </HStack>
+        <Link href="#projects">
+          <HStack justify="flex-end">
+            <FaArrowCircleDown color="#AAAAAA" size="26px" />
+            <FaArrowCircleDown color="#AAAAAA" size="26px" />
+          </HStack>
+        </Link>
       </Box>
     </Flex>
   );

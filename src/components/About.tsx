@@ -1,11 +1,11 @@
-import { Flex, Image, Text, Box, Button } from "@chakra-ui/react";
+import { Flex, Image, Text, Box, Button, Link } from "@chakra-ui/react";
 import myPhoto from "../assets/me.jpeg";
 
 const About = () => {
   return (
     <Flex
-    id="about"
-      pt={{ base: "150px", md: "200px", lg:"250px", xl: "250px" }}
+      id="about"
+      pt={{ base: "150px", md: "200px", lg: "250px", xl: "250px" }}
       direction={{ base: "column", md: "row" }}
       justifySelf="center"
       justify="space-around"
@@ -48,16 +48,18 @@ const About = () => {
           a touch of creativity. I'm the developer you want on your team if
           you’re looking to hear users say, "This is exactly what I needed!"
         </Text>
-        <Button
-          mt="24px"
-          borderRadius="full"
-          bg="none"
-          variant="outline"
-          color="white"
-          border="1px solid white"
-        >
-          Let's talk
-        </Button>
+        <Link href="mailto:egyadesmond@gmail.com">
+          <Button
+            mt="24px"
+            borderRadius="full"
+            bg="none"
+            variant="outline"
+            color="white"
+            border="1px solid white"
+          >
+            Let's talk
+          </Button>
+        </Link>
       </Box>
     </Flex>
   );
