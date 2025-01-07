@@ -89,11 +89,11 @@ const Projects = () => {
               implementación de un diseño responsivo.
             </Text>
 
-            <HStack>
-              <Button leftIcon={<RiLinkM />} fontWeight="400" bg="none">
+            <HStack >
+              <Button color="white" leftIcon={<RiLinkM />} fontWeight="400" bg="none">
                 Live Demo
               </Button>
-              <Button leftIcon={<FiGithub />} fontWeight="400" bg="none">
+              <Button color="white" leftIcon={<FiGithub />} fontWeight="400" bg="none">
                 Github
               </Button>
             </HStack>
@@ -165,10 +165,10 @@ const Projects = () => {
             </Text>
 
             <HStack>
-              <Button leftIcon={<RiLinkM />} fontWeight="400" bg="none">
+              <Button color="white" leftIcon={<RiLinkM />} fontWeight="400" bg="none">
                 Live Demo
               </Button>
-              <Button leftIcon={<FiGithub />} fontWeight="400" bg="none">
+              <Button color="white" leftIcon={<FiGithub />} fontWeight="400" bg="none">
                 Github
               </Button>
             </HStack>
@@ -240,10 +240,10 @@ const Projects = () => {
             </Text>
 
             <HStack>
-              <Button leftIcon={<RiLinkM />} fontWeight="400" bg="none">
+              <Button color="white" leftIcon={<RiLinkM />} fontWeight="400" bg="none">
                 Live Demo
               </Button>
-              <Button leftIcon={<FiGithub />} fontWeight="400" bg="none">
+              <Button color="white" leftIcon={<FiGithub />} fontWeight="400" bg="none">
                 Github
               </Button>
             </HStack>
