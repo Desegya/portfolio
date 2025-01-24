@@ -283,6 +283,8 @@ const Projects = () => {
                 bg="none"
                 as="a"
                 href="https://github.com/Desegya/eventLight"
+                target="_blank"
+
               >
                 Github
               </Button>
