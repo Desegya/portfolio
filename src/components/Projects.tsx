@@ -10,10 +10,17 @@ import {
 } from "@chakra-ui/react";
 import { FiGithub } from "react-icons/fi";
 import { RiLinkM } from "react-icons/ri";
+import eventlight from "../assets/eventlight.png";
 
 const Projects = () => {
   return (
-    <Box id="projects" pt="135px" justifySelf="center" maxW="1100px" px={{ base: "20px", md: 4 }}>
+    <Box
+      id="projects"
+      pt="135px"
+      justifySelf="center"
+      maxW="1100px"
+      px={{ base: "20px", md: 4 }}
+    >
       <Heading
         textAlign="center"
         color="#A3A3A3"
@@ -89,11 +96,21 @@ const Projects = () => {
               implementación de un diseño responsivo.
             </Text>
 
-            <HStack >
-              <Button color="white" leftIcon={<RiLinkM />} fontWeight="400" bg="none">
+            <HStack>
+              <Button
+                color="white"
+                leftIcon={<RiLinkM />}
+                fontWeight="400"
+                bg="none"
+              >
                 Live Demo
               </Button>
-              <Button color="white" leftIcon={<FiGithub />} fontWeight="400" bg="none">
+              <Button
+                color="white"
+                leftIcon={<FiGithub />}
+                fontWeight="400"
+                bg="none"
+              >
                 Github
               </Button>
             </HStack>
@@ -165,10 +182,20 @@ const Projects = () => {
             </Text>
 
             <HStack>
-              <Button color="white" leftIcon={<RiLinkM />} fontWeight="400" bg="none">
+              <Button
+                color="white"
+                leftIcon={<RiLinkM />}
+                fontWeight="400"
+                bg="none"
+              >
                 Live Demo
               </Button>
-              <Button color="white" leftIcon={<FiGithub />} fontWeight="400" bg="none">
+              <Button
+                color="white"
+                leftIcon={<FiGithub />}
+                fontWeight="400"
+                bg="none"
+              >
                 Github
               </Button>
             </HStack>
@@ -185,7 +212,7 @@ const Projects = () => {
         {/* Image Section */}
         <Box flex="1">
           <Image
-            src="http://dummyimage.com/480x360.png/dddddd/000000"
+            src={eventlight}
             alt="Project Thumbnail"
             borderRadius="lg"
             objectFit="cover"
@@ -229,21 +256,34 @@ const Projects = () => {
               </Button>
             </HStack>
             <Heading fontSize="32px" fontFamily="Onest" fontWeight="400">
-              Project With React
+              EventLight
             </Heading>
             <Text>
-              Proyectos realizados con la biblioteca React. Este proyecto me
-              permitió mejorar mis habilidades en React, aprendiendo a trabajar
-              con componentes, estados y props. Enfrenté desafíos como la
-              creación de una interfaz atractiva y funcional, así como la
-              implementación de un diseño responsivo.
+              EventLight is an event discovery platform that helps users find
+              and explore events with ease. It is currently a work in progress,
+              with more features and enhancements underway.
             </Text>
 
             <HStack>
-              <Button color="white" leftIcon={<RiLinkM />} fontWeight="400" bg="none">
+              <Button
+                color="white"
+                leftIcon={<RiLinkM />}
+                fontWeight="400"
+                bg="none"
+                as="a"
+                href="https://event-light.vercel.app"
+                target="_blank"
+              >
                 Live Demo
               </Button>
-              <Button color="white" leftIcon={<FiGithub />} fontWeight="400" bg="none">
+              <Button
+                color="white"
+                leftIcon={<FiGithub />}
+                fontWeight="400"
+                bg="none"
+                as="a"
+                href="https://github.com/Desegya/eventLight"
+              >
                 Github
               </Button>
             </HStack>
