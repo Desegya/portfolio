@@ -5,6 +5,7 @@ const About = () => {
   return (
     <Flex
       id="about"
+      px={{base: 2, md: 0}}
       pt={{ base: "150px", md: "200px", lg: "250px", xl: "250px" }}
       direction={{ base: "column", md: "row" }}
       justifySelf="center"

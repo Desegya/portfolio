@@ -213,14 +213,14 @@ const Projects = () => {
         <Box flex="1">
           <Image
             src={eventlight}
-            alt="Project Thumbnail"
+            alt="A screenshot of Eventlight's homepage"
             borderRadius="lg"
             objectFit="cover"
             w="100%"
           />
         </Box>
 
-        {/* Text Section */}
+        
         <Box flex="1">
           <Stack spacing={4}>
             <HStack>

@@ -37,7 +37,7 @@ const Footer = ({ scrollToTop }: Props) => {
           gap={{ base: "4px", md: "30px", lg: "52px" }}
         >
           <Link
-            href="https://www.linkedin.com/in/your-username/"
+            href="https://www.linkedin.com/in/desmond-egya/"
             target="_blank"
           >
             LINKEDIN

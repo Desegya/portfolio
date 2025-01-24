@@ -25,11 +25,11 @@ const NavBar = ({ scrollToTop }: Props) => {
       color="white"
       position="fixed"
       top="0"
-      right={4}
-      left={4}
+      right={0}
+      left={0}
       zIndex="100"
     >
-      <Flex justifyContent="space-between" align="center" w="100%" py={4}>
+      <Flex justifyContent="space-between" align="center" w="100%" p={4}>
         <Heading as="h2" fontSize="18px" fontWeight="bold">
           Desmond Egya
         </Heading>
