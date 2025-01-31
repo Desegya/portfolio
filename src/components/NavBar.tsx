@@ -68,7 +68,7 @@ const NavBar = ({ scrollToTop }: Props) => {
           textAlign="right"
           p={4}
           rounded="md"
-          display={{ md: "none" }} 
+          display={{ md: "none" }}
         >
           <Link display="block" href="#">
             HOME

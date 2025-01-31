@@ -11,6 +11,7 @@ import {
 import { FiGithub } from "react-icons/fi";
 import { RiLinkM } from "react-icons/ri";
 import eventlight from "../assets/eventlight.png";
+import agriconnect from "../assets/agriconnect.png";
 
 const Projects = () => {
   return (
@@ -127,8 +128,8 @@ const Projects = () => {
         {/* Image Section */}
         <Box flex="1">
           <Image
-            src="http://dummyimage.com/480x360.png/dddddd/000000"
-            alt="Project Thumbnail"
+            src={agriconnect}
+            alt="AgriConnect Home Page"
             borderRadius="lg"
             objectFit="cover"
             w="100%"
@@ -147,7 +148,7 @@ const Projects = () => {
                 fontFamily="Onest"
                 fontWeight="400"
               >
-                Python
+                Django
               </Button>
               <Button
                 borderRadius="full"
@@ -171,14 +172,16 @@ const Projects = () => {
               </Button>
             </HStack>
             <Heading fontSize="32px" fontFamily="Onest" fontWeight="400">
-              Project With React
+              AgriConnect
             </Heading>
             <Text>
-              Proyectos realizados con la biblioteca React. Este proyecto me
-              permitió mejorar mis habilidades en React, aprendiendo a trabajar
-              con componentes, estados y props. Enfrenté desafíos como la
-              creación de una interfaz atractiva y funcional, así como la
-              implementación de un diseño responsivo.
+              Agriconnect is a multi-seller platform designed to bridge the gap
+              between farmers and buyers, making agricultural trade seamless and
+              efficient. The platform enables multiple sellers to list their products, manage
+              orders, and receive secure payments. With a
+              user-friendly interface, Agriconnect simplifies the process of
+              discovering and purchasing farm produce while providing farmers
+              with a reliable marketplace to reach a wider audience.
             </Text>
 
             <HStack>
@@ -220,7 +223,6 @@ const Projects = () => {
           />
         </Box>
 
-        
         <Box flex="1">
           <Stack spacing={4}>
             <HStack>
@@ -284,7 +286,6 @@ const Projects = () => {
                 as="a"
                 href="https://github.com/Desegya/eventLight"
                 target="_blank"
-
               >
                 Github
               </Button>
