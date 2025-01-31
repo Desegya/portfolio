@@ -190,6 +190,9 @@ const Projects = () => {
                 leftIcon={<RiLinkM />}
                 fontWeight="400"
                 bg="none"
+                as="a"
+                href="https://agriconnect-ng.vercel.app"
+                target="_blank"
               >
                 Live Demo
               </Button>
@@ -198,6 +201,9 @@ const Projects = () => {
                 leftIcon={<FiGithub />}
                 fontWeight="400"
                 bg="none"
+                as="a"
+                href="https://github.com/Desegya/Agriconnect"
+                target="_blank"
               >
                 Github
               </Button>
