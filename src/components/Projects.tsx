@@ -12,6 +12,7 @@ import { FiGithub } from "react-icons/fi";
 import { RiLinkM } from "react-icons/ri";
 import eventlight from "../assets/eventlight.png";
 import agriconnect from "../assets/agriconnect.png";
+import gamehub from "../assets/gamehub.png";
 
 const Projects = () => {
   return (
@@ -43,7 +44,7 @@ const Projects = () => {
         {/* Image Section */}
         <Box flex="1">
           <Image
-            src="http://dummyimage.com/480x360.png/dddddd/000000"
+            src={gamehub}
             alt="Project Thumbnail"
             borderRadius="lg"
             objectFit="cover"
@@ -87,14 +88,15 @@ const Projects = () => {
               </Button>
             </HStack>
             <Heading fontSize="32px" fontFamily="Onest" fontWeight="400">
-              Project With React
+              GameHub
             </Heading>
             <Text>
-              Proyectos realizados con la biblioteca React. Este proyecto me
-              permitió mejorar mis habilidades en React, aprendiendo a trabajar
-              con componentes, estados y props. Enfrenté desafíos como la
-              creación de una interfaz atractiva y funcional, así como la
-              implementación de un diseño responsivo.
+              Gamehub is a video game discovery platform that helps users
+              explore and find games based on platform, genre, and ratings.
+              Powered by the RAWG API, it provides a seamless browsing
+              experience, allowing gamers to filter and discover titles that
+              match their preferences. The platform is designed for an intuitive
+              user experience, making it easy to navigate and uncover new games.
             </Text>
 
             <HStack>
@@ -103,6 +105,9 @@ const Projects = () => {
                 leftIcon={<RiLinkM />}
                 fontWeight="400"
                 bg="none"
+                as="a"
+                href="https://game-hub-blond-mu.vercel.app/"
+                target="_blank"
               >
                 Live Demo
               </Button>
@@ -111,6 +116,97 @@ const Projects = () => {
                 leftIcon={<FiGithub />}
                 fontWeight="400"
                 bg="none"
+                as="a"
+                href="https://github.com/Desegya/game-hub"
+                target="_blank"
+              >
+                Github
+              </Button>
+            </HStack>
+          </Stack>
+        </Box>
+      </Flex>
+      <Flex
+        direction={{ base: "column", md: "row" }}
+        align="center"
+        justify="space-between"
+        my={8}
+        gap={6}
+      >
+        {/* Image Section */}
+        <Box flex="1">
+          <Image
+            src={eventlight}
+            alt="A screenshot of Eventlight's homepage"
+            borderRadius="lg"
+            objectFit="cover"
+            w="100%"
+          />
+        </Box>
+
+        <Box flex="1">
+          <Stack spacing={4}>
+            <HStack>
+              <Button
+                borderRadius="full"
+                bg="#646464"
+                color="#000000"
+                fontSize="16px"
+                fontFamily="Onest"
+                fontWeight="400"
+              >
+                Django
+              </Button>
+              <Button
+                borderRadius="full"
+                bg="#646464"
+                color="#000000"
+                fontSize="16px"
+                fontFamily="Onest"
+                fontWeight="400"
+              >
+                React
+              </Button>
+              <Button
+                borderRadius="full"
+                bg="#646464"
+                color="#000000"
+                fontSize="16px"
+                fontFamily="Onest"
+                fontWeight="400"
+              >
+                TypeScript
+              </Button>
+            </HStack>
+            <Heading fontSize="32px" fontFamily="Onest" fontWeight="400">
+              EventLight
+            </Heading>
+            <Text>
+              EventLight is an event discovery platform that helps users find
+              and explore events with ease. It is currently a work in progress,
+              with more features and enhancements underway.
+            </Text>
+
+            <HStack>
+              <Button
+                color="white"
+                leftIcon={<RiLinkM />}
+                fontWeight="400"
+                bg="none"
+                as="a"
+                href="https://event-light.vercel.app"
+                target="_blank"
+              >
+                Live Demo
+              </Button>
+              <Button
+                color="white"
+                leftIcon={<FiGithub />}
+                fontWeight="400"
+                bg="none"
+                as="a"
+                href="https://github.com/Desegya/eventLight"
+                target="_blank"
               >
                 Github
               </Button>
@@ -175,13 +271,15 @@ const Projects = () => {
               AgriConnect
             </Heading>
             <Text>
-              Agriconnect is a multi-seller platform designed to bridge the gap
-              between farmers and buyers, making agricultural trade seamless and
-              efficient. The platform enables multiple sellers to list their products, manage
-              orders, and receive secure payments. With a
-              user-friendly interface, Agriconnect simplifies the process of
-              discovering and purchasing farm produce while providing farmers
-              with a reliable marketplace to reach a wider audience.
+              Agriconnect is a multi-seller platform designed to streamline
+              agricultural trade by connecting farmers with buyers. It allows
+              multiple sellers to list their products, manage orders, and
+              receive secure payments, creating a seamless and efficient
+              marketplace. The platform simplifies the discovery and purchase of
+              farm produce while helping farmers reach a broader audience. I am
+              currently enhancing Agriconnect with new improvements and
+              developing the backend to ensure full functionality and a smooth
+              user experience.
             </Text>
 
             <HStack>
@@ -203,94 +301,6 @@ const Projects = () => {
                 bg="none"
                 as="a"
                 href="https://github.com/Desegya/Agriconnect"
-                target="_blank"
-              >
-                Github
-              </Button>
-            </HStack>
-          </Stack>
-        </Box>
-      </Flex>
-      <Flex
-        direction={{ base: "column", md: "row" }}
-        align="center"
-        justify="space-between"
-        my={8}
-        gap={6}
-      >
-        {/* Image Section */}
-        <Box flex="1">
-          <Image
-            src={eventlight}
-            alt="A screenshot of Eventlight's homepage"
-            borderRadius="lg"
-            objectFit="cover"
-            w="100%"
-          />
-        </Box>
-
-        <Box flex="1">
-          <Stack spacing={4}>
-            <HStack>
-              <Button
-                borderRadius="full"
-                bg="#646464"
-                color="#000000"
-                fontSize="16px"
-                fontFamily="Onest"
-                fontWeight="400"
-              >
-                Python
-              </Button>
-              <Button
-                borderRadius="full"
-                bg="#646464"
-                color="#000000"
-                fontSize="16px"
-                fontFamily="Onest"
-                fontWeight="400"
-              >
-                React
-              </Button>
-              <Button
-                borderRadius="full"
-                bg="#646464"
-                color="#000000"
-                fontSize="16px"
-                fontFamily="Onest"
-                fontWeight="400"
-              >
-                TypeScript
-              </Button>
-            </HStack>
-            <Heading fontSize="32px" fontFamily="Onest" fontWeight="400">
-              EventLight
-            </Heading>
-            <Text>
-              EventLight is an event discovery platform that helps users find
-              and explore events with ease. It is currently a work in progress,
-              with more features and enhancements underway.
-            </Text>
-
-            <HStack>
-              <Button
-                color="white"
-                leftIcon={<RiLinkM />}
-                fontWeight="400"
-                bg="none"
-                as="a"
-                href="https://event-light.vercel.app"
-                target="_blank"
-              >
-                Live Demo
-              </Button>
-              <Button
-                color="white"
-                leftIcon={<FiGithub />}
-                fontWeight="400"
-                bg="none"
-                as="a"
-                href="https://github.com/Desegya/eventLight"
                 target="_blank"
               >
                 Github
