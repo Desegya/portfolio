@@ -70,16 +70,16 @@ const NavBar = ({ scrollToTop }: Props) => {
           rounded="md"
           display={{ md: "none" }}
         >
-          <Link display="block" href="#">
+          <Link display="block" onClick={scrollToTop}>
             HOME
           </Link>
-          <Link display="block" href="#">
+          <Link display="block" href="#projects">
             PROJECTS
           </Link>
-          <Link display="block" href="#">
+          <Link display="block" href="#skills">
             SKILLS
           </Link>
-          <Link display="block" href="#">
+          <Link display="block" href="#about">
             ABOUT ME
           </Link>
         </VStack>
