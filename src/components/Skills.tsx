@@ -4,7 +4,7 @@ import python from "../assets/python.svg";
 import javascript from "../assets/javascript.svg";
 import html from "../assets/html.svg";
 import css from "../assets/css.svg";
-import git from "../assets/git.svg";
+// import git from "../assets/git.svg";
 import django from "../assets/django.svg";
 import mysql from "../assets/mysql.svg";
 import typescript from "../assets/typescript.svg";
