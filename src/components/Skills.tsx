@@ -8,6 +8,7 @@ import git from "../assets/git.svg";
 import django from "../assets/django.svg";
 import mysql from "../assets/mysql.svg";
 import typescript from "../assets/typescript.svg";
+import nextjs from "../assets/nextjs.svg";
 
 const skills = [
   { name: "React", icon: react },
@@ -15,10 +16,11 @@ const skills = [
   { name: "TypeScript", icon: typescript },
   { name: "HTML", icon: html },
   { name: "CSS", icon: css },
-  { name: "Git", icon: git },
+  // { name: "Git", icon: git },
   { name: "Django", icon: django },
   { name: "MySQL", icon: mysql },
   { name: "JavaScript", icon: javascript },
+  { name: "NextJs", icon: nextjs },
 ];
 
 const Skills = () => {

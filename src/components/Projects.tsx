@@ -11,7 +11,7 @@ import {
 import { FiGithub } from "react-icons/fi";
 import { RiLinkM } from "react-icons/ri";
 import eventlight from "../assets/eventlight.png";
-import agriconnect from "../assets/agriconnect.png";
+import atpb from "../assets/atpb.png";
 import gamehub from "../assets/gamehub.png";
 
 const Projects = () => {
@@ -56,7 +56,7 @@ const Projects = () => {
         <Box flex="1">
           <Stack spacing={4}>
             <HStack>
-              <Button
+              {/* <Button
                 borderRadius="full"
                 bg="#646464"
                 color="#000000"
@@ -65,7 +65,7 @@ const Projects = () => {
                 fontWeight="400"
               >
                 Python
-              </Button>
+              </Button> */}
               <Button
                 borderRadius="full"
                 bg="#646464"
@@ -224,7 +224,7 @@ const Projects = () => {
         {/* Image Section */}
         <Box flex="1">
           <Image
-            src={agriconnect}
+            src={atpb}
             alt="AgriConnect Home Page"
             borderRadius="lg"
             objectFit="cover"
@@ -244,7 +244,7 @@ const Projects = () => {
                 fontFamily="Onest"
                 fontWeight="400"
               >
-                Django
+                NextJS
               </Button>
               <Button
                 borderRadius="full"
@@ -268,18 +268,12 @@ const Projects = () => {
               </Button>
             </HStack>
             <Heading fontSize="32px" fontFamily="Onest" fontWeight="400">
-              AgriConnect
+              Around Town Property Brokers
             </Heading>
             <Text>
-              Agriconnect is a multi-seller platform designed to streamline
-              agricultural trade by connecting farmers with buyers. It allows
-              multiple sellers to list their products, manage orders, and
-              receive secure payments, creating a seamless and efficient
-              marketplace. The platform simplifies the discovery and purchase of
-              farm produce while helping farmers reach a broader audience. I am
-              currently enhancing Agriconnect with new improvements and
-              developing the backend to ensure full functionality and a smooth
-              user experience.
+              A single‑page marketing site built for a local real‑estate agency.
+              Mobile‑first, fully responsive, with smooth scroll‑into‑sections
+              and custom SVG graphics. Developed as a client project.
             </Text>
 
             <HStack>
@@ -289,12 +283,12 @@ const Projects = () => {
                 fontWeight="400"
                 bg="none"
                 as="a"
-                href="https://agriconnect-ng.vercel.app"
+                href="https://atpb.org"
                 target="_blank"
               >
                 Live Demo
               </Button>
-              <Button
+              {/* <Button
                 color="white"
                 leftIcon={<FiGithub />}
                 fontWeight="400"
@@ -304,7 +298,7 @@ const Projects = () => {
                 target="_blank"
               >
                 Github
-              </Button>
+              </Button> */}
             </HStack>
           </Stack>
         </Box>
