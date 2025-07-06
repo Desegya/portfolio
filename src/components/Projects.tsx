@@ -283,7 +283,7 @@ const Projects = () => {
                 fontWeight="400"
                 bg="none"
                 as="a"
-                href="https://atpb.org"
+                href="https://www.atpb.org"
                 target="_blank"
               >
                 Live Demo
