@@ -10,9 +10,6 @@ import {
 } from "@chakra-ui/react";
 import { FiGithub } from "react-icons/fi";
 import { RiLinkM } from "react-icons/ri";
-import eventlight from "../assets/eventlight.png";
-import atpb from "../assets/atpb.png";
-import gamehub from "../assets/gamehub.png";
 
 const Projects = () => {
   return (
@@ -44,7 +41,7 @@ const Projects = () => {
         {/* Image Section */}
         <Box flex="1">
           <Image
-            src={gamehub}
+            src="https://res.cloudinary.com/ddbs7m7nt/image/upload/f_webp,q_auto/v1751910571/gamehub_hyhpmy.png"
             alt="Project Thumbnail"
             borderRadius="lg"
             objectFit="cover"
@@ -136,7 +133,7 @@ const Projects = () => {
         {/* Image Section */}
         <Box flex="1">
           <Image
-            src={eventlight}
+            src="https://res.cloudinary.com/ddbs7m7nt/image/upload/f_webp,q_auto/v1751910520/eventlight_rgzf1p.png"
             alt="A screenshot of Eventlight's homepage"
             borderRadius="lg"
             objectFit="cover"
@@ -224,8 +221,8 @@ const Projects = () => {
         {/* Image Section */}
         <Box flex="1">
           <Image
-            src={atpb}
-            alt="AgriConnect Home Page"
+            src="https://res.cloudinary.com/ddbs7m7nt/image/upload/f_auto,q_auto/c_fill,w_600,h_400/v1751911736/atpb_kuwbij.png"
+            alt="Atpb landing page screenshot"
             borderRadius="lg"
             objectFit="cover"
             w="100%"
@@ -271,9 +268,9 @@ const Projects = () => {
               Around Town Property Brokers
             </Heading>
             <Text>
-              A single‑page marketing site built for a local real‑estate agency.
-              Mobile‑first, fully responsive, with smooth scroll‑into‑sections
-              and custom SVG graphics. Developed as a client project.
+              Single‑page marketing site for a real‑estate agency Fully
+              responsive, featuring seamless section scrolling and polished UI
+              interactions. Developed end‑to‑end as a client project.
             </Text>
 
             <HStack>
