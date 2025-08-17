@@ -133,7 +133,7 @@ const Projects = () => {
         {/* Image Section */}
         <Box flex="1">
           <Image
-            src="https://res.cloudinary.com/ddbs7m7nt/image/upload/f_webp,q_auto/v1751910520/eventlight_rgzf1p.png"
+            src="https://res.cloudinary.com/ddbs7m7nt/image/upload/f_webp,q_auto/v1755426952/elan.png"
             alt="A screenshot of Eventlight's homepage"
             borderRadius="lg"
             objectFit="cover"
@@ -176,12 +176,16 @@ const Projects = () => {
               </Button>
             </HStack>
             <Heading fontSize="32px" fontFamily="Onest" fontWeight="400">
-              EventLight
+              ÉLAN Made Perfect
             </Heading>
             <Text>
-              EventLight is an event discovery platform that helps users find
-              and explore events with ease. It is currently a work in progress,
-              with more features and enhancements underway.
+              ÉLAN Made Perfect is a modern e-commerce store built with Django
+              and MySQL, designed for a smooth and elegant shopping experience.
+              The platform allows customers to browse products seamlessly, with
+              secure backend management and optimized media storage powered by
+              Cloudinary. Developed with scalability in mind, it provides a
+              strong foundation for future growth, including order handling and
+              advanced product features.
             </Text>
 
             <HStack>
@@ -191,12 +195,12 @@ const Projects = () => {
                 fontWeight="400"
                 bg="none"
                 as="a"
-                href="https://event-light.vercel.app"
+                href="https://shopelan.co"
                 target="_blank"
               >
                 Live Demo
               </Button>
-              <Button
+              {/* <Button
                 color="white"
                 leftIcon={<FiGithub />}
                 fontWeight="400"
@@ -206,7 +210,7 @@ const Projects = () => {
                 target="_blank"
               >
                 Github
-              </Button>
+              </Button> */}
             </HStack>
           </Stack>
         </Box>
