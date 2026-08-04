@@ -77,7 +77,7 @@ export const experience: ExperienceEntry[] = [
     company: "Bucks",
     role: "Full-time Software Engineer",
     description:
-      "Building and maintaining a mobile banking app end-to-end — customer app, internal admin tools, and the API behind both.",
+      "Built the mobile app's frontend solo, from the ground up, and contribute across the admin dashboard and API for this mobile banking platform.",
     tags: ["React Native", "Next.js", "Express", "MongoDB", "Redis"],
     href: "https://apps.apple.com/us/app/bucks-borderless-banking/id6757264502",
     current: true,
