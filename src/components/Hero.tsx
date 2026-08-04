@@ -34,9 +34,8 @@ export function Hero() {
       >
         <p className="max-w-sm text-sm leading-relaxed text-muted">
           Most people call me Dezzi. I design and build web and mobile
-          products end-to-end — from the database up to the pixels.
-          Currently building at Bucks, with room open for freelance work on
-          the side.
+          products end-to-end — from the database up to the pixels — and
+          I&apos;m always up for interesting freelance work.
         </p>
 
         <a

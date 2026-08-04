@@ -75,12 +75,11 @@ export interface ExperienceEntry {
 export const experience: ExperienceEntry[] = [
   {
     company: "Bucks",
-    role: "Full-time Software Engineer",
+    role: "Software Engineer",
     description:
       "Built the mobile app's frontend solo, from the ground up, and contribute across the admin dashboard and API for this mobile banking platform.",
     tags: ["React Native", "Next.js", "Express", "MongoDB", "Redis"],
     href: "https://usebucks.co/download",
-    current: true,
   },
   {
     company: "Talim",
