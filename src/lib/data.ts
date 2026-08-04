@@ -59,7 +59,7 @@ export const projects: Project[] = [
     description:
       "A personal AI study coach for students — upload your notes, get a study plan built around your exam date, and test yourself with flashcards and quizzes along the way. No school sign-up required.",
     tags: ["Next.js", "NestJS", "PostgreSQL", "Claude API"],
-    launchingSoon: true,
+    liveUrl: "https://nightklass.com",
   },
 ];
 
