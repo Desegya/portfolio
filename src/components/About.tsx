@@ -23,20 +23,20 @@ export function About() {
             About me
           </h2>
           <p className="mt-4 max-w-xl text-lg leading-relaxed">
-            I&apos;m Desmond Egya — Dezzi to most people. I&apos;m a
-            full-stack developer who&apos;s spent the last few years
-            building things end-to-end: mobile banking apps, the admin
-            tools and APIs behind them, and the odd side project along the
-            way. These days I build full-time at Bucks, with stints on
-            Talim (a school platform) and FarmConnect (agric-fintech) too.
-            When I&apos;m not coding like a machine or brainstorming new
-            app ideas, you&apos;ll find me leveling up in video games,
-            experimenting with photography, or watching football —
-            because, let&apos;s face it, football is life. My development
-            philosophy? Write clean code, solve real problems, and add a
-            touch of creativity. I&apos;m the developer you want on your
-            team if you&apos;re looking to hear users say, &quot;This is
-            exactly what I needed!&quot;
+            I&apos;m Desmond Egya — Dezzi to most people. Over the years
+            I&apos;ve gone from writing my first lines of React to
+            shipping production software full-time: mobile banking apps,
+            admin systems, and the APIs holding it all together. I care
+            about the parts that don&apos;t show — code that&apos;s easy
+            to reason about months later, systems that hold up under real
+            users, decisions made for the right reasons.
+          </p>
+          <p className="mt-4 max-w-xl leading-relaxed text-muted">
+            Outside of work, I&apos;m still a gamer, I still catch every
+            football match I can, I still lose an evening to a good movie,
+            and there&apos;s always a book somewhere in progress.
+            Different hobbies, same instinct — get curious, go deep,
+            finish the thing.
           </p>
           <a
             href={`mailto:${email}`}
