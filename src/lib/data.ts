@@ -55,11 +55,11 @@ export const projects: Project[] = [
     launchingSoon: true,
   },
   {
-    name: "More work coming soon",
+    name: "assess-iq",
     description:
-      "Another project in progress. Check back soon, or reach out if you want the details before it's posted.",
-    tags: [],
-    comingSoon: true,
+      "An AI-assisted assessment platform for schools — upload course material and generate question banks, assessments, and study guides, powered by Claude.",
+    tags: ["Next.js", "NestJS", "PostgreSQL", "Claude API"],
+    launchingSoon: true,
   },
 ];
 
@@ -79,7 +79,7 @@ export const experience: ExperienceEntry[] = [
     description:
       "Built the mobile app's frontend solo, from the ground up, and contribute across the admin dashboard and API for this mobile banking platform.",
     tags: ["React Native", "Next.js", "Express", "MongoDB", "Redis"],
-    href: "https://apps.apple.com/us/app/bucks-borderless-banking/id6757264502",
+    href: "https://usebucks.co/download",
     current: true,
   },
   {
