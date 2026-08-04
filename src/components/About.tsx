@@ -1,7 +1,6 @@
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { Reveal } from "./Reveal";
-import myPhoto from "@/assets/me.jpeg";
 import { email } from "@/lib/data";
 
 export function About() {
@@ -10,7 +9,7 @@ export function About() {
       <div className="grid gap-10 sm:grid-cols-[auto_1fr] sm:items-center sm:gap-16">
         <Reveal>
           <Image
-            src={myPhoto}
+            src="/images/dezzi.jpeg"
             alt="Portrait of Desmond Egya"
             width={200}
             height={200}
