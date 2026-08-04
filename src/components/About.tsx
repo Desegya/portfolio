@@ -1,23 +1,67 @@
+"use client";
+
+import { useRef, type MouseEvent } from "react";
 import Image from "next/image";
+import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
 import { ArrowUpRight } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { email } from "@/lib/data";
 
+function PhotoCard() {
+  const ref = useRef<HTMLDivElement>(null);
+  const x = useMotionValue(0);
+  const y = useMotionValue(0);
+  const rotateX = useSpring(useTransform(y, [-60, 60], [10, -10]), {
+    stiffness: 250,
+    damping: 20,
+  });
+  const rotateY = useSpring(useTransform(x, [-60, 60], [-10, 10]), {
+    stiffness: 250,
+    damping: 20,
+  });
+
+  const handleMouseMove = (event: MouseEvent<HTMLDivElement>) => {
+    const rect = ref.current?.getBoundingClientRect();
+    if (!rect) return;
+    x.set(event.clientX - rect.left - rect.width / 2);
+    y.set(event.clientY - rect.top - rect.height / 2);
+  };
+
+  const handleMouseLeave = () => {
+    x.set(0);
+    y.set(0);
+  };
+
+  return (
+    <div style={{ perspective: 800 }}>
+      <motion.div
+        ref={ref}
+        onMouseMove={handleMouseMove}
+        onMouseLeave={handleMouseLeave}
+        style={{ rotateX, rotateY, rotateZ: -4 }}
+        className="w-fit rounded-2xl border-2 border-accent/30 bg-surface p-3 shadow-xl"
+      >
+        <Image
+          src="/images/dezzi.jpeg"
+          alt="Portrait of Desmond Egya"
+          width={224}
+          height={264}
+          className="h-60 w-52 rounded-xl object-cover sm:h-64 sm:w-56"
+        />
+      </motion.div>
+    </div>
+  );
+}
+
 export function About() {
   return (
     <section id="about" className="py-24 sm:py-32">
-      <div className="grid gap-10 sm:grid-cols-[auto_1fr] sm:items-center sm:gap-16">
+      <div className="grid gap-12 sm:grid-cols-[auto_1fr] sm:items-start sm:gap-16">
         <Reveal>
-          <Image
-            src="/images/dezzi.jpeg"
-            alt="Portrait of Desmond Egya"
-            width={200}
-            height={200}
-            className="h-40 w-40 rounded-full object-cover ring-1 ring-border sm:h-52 sm:w-52"
-          />
+          <PhotoCard />
         </Reveal>
 
-        <Reveal delay={0.1}>
+        <Reveal delay={0.1} className="sm:pt-6">
           <h2 className="text-sm uppercase tracking-[0.2em] text-accent">
             About me
           </h2>
