@@ -4,23 +4,33 @@ Welcome to my personal portfolio website! This site showcases my skills, project
 
 ## About This Project
 
-This is a personal website built using **React**, **Chakra UI**, and **TypeScript**. It includes the following sections:
+This is a personal website built using **Next.js**, **TypeScript**, and **Tailwind CSS**. It includes the following sections:
 
-- **Home**: Introduction and overview of my work.
-- **Projects**: A display of the projects I've worked on.
-- **Skills**: A list of the technologies and tools I'm proficient in.
+- **Hero**: Introduction and current availability.
+- **Selected Work**: A display of the projects I've worked on.
+- **Skills**: The technologies and tools I work with, grouped by category.
 - **About Me**: Information about my background and experience.
+- **Contact**: A direct way to reach out.
 
 ## Features
 
-- **Responsive Design**: The website adapts to different screen sizes (desktop, tablet, and mobile).
-- **Modern UI**: A clean and minimal design using Chakra UI components.
-- **Smooth Navigation**: Links to various sections of the website, including scrolling animations.
-  
+- **Responsive Design**: The site adapts to different screen sizes (desktop, tablet, and mobile).
+- **Light & Dark Mode**: Theme toggle powered by `next-themes`, dark by default.
+- **Scroll Animations**: Subtle reveal-on-scroll interactions via Framer Motion.
+- **Resume Download**: One-click access to my CV.
+
 ## Technologies Used
 
-- **React** - JavaScript library for building user interfaces.
+- **Next.js** - React framework for the App Router, routing, and metadata/SEO.
 - **TypeScript** - Superset of JavaScript for type safety.
-- **Chakra UI** - A simple and modular component library for building React UIs.
-- **React Icons** - For incorporating icons into the design.
+- **Tailwind CSS** - Utility-first styling.
+- **Framer Motion** - Animations and scroll interactions.
+- **next-themes** - Light/dark theme switching.
+- **Lucide** / **React Icons** - Iconography.
 
+## Getting Started
+
+```bash
+npm install
+npm run dev
+```

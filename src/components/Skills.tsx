@@ -1,84 +1,42 @@
-import { Box, Heading, Text, HStack, Flex } from "@chakra-ui/react";
-import react from "../assets/react.svg";
-import python from "../assets/python.svg";
-import javascript from "../assets/javascript.svg";
-import html from "../assets/html.svg";
-import css from "../assets/css.svg";
-// import git from "../assets/git.svg";
-import django from "../assets/django.svg";
-import mysql from "../assets/mysql.svg";
-import typescript from "../assets/typescript.svg";
-import nextjs from "../assets/nextjs.svg";
+import { Reveal } from "./Reveal";
+import { skillGroups } from "@/lib/data";
 
-const skills = [
-  { name: "React", icon: react },
-  { name: "Python", icon: python },
-  { name: "TypeScript", icon: typescript },
-  { name: "HTML", icon: html },
-  { name: "CSS", icon: css },
-  // { name: "Git", icon: git },
-  { name: "Django", icon: django },
-  { name: "MySQL", icon: mysql },
-  { name: "JavaScript", icon: javascript },
-  { name: "NextJs", icon: nextjs },
-];
-
-const Skills = () => {
+export function Skills() {
   return (
-    <Box
-      id="skills"
-      mx="auto"
-      alignContent="center"
-      pt={{ base: "50px", md: "100px" }}
-    >
-      <Heading
-        textAlign="center"
-        color="#A3A3A3"
-        textTransform="uppercase"
-        fontSize={{ base: "29px", md: "48px" }}
-        fontWeight="700"
-        lineHeight="48px"
-        mb="50px"
-      >
-        MY Skills
-      </Heading>
-      <Flex
-        wrap="wrap"
-        justify="center"
-        rowGap="30px"
-        columnGap={{ base: "0px", md: "50px", lg: "80px" }}
-        direction="row"
-      >
-        {skills.map((skill) => (
-          <HStack
-            key={skill.name}
-            w={{
-              base: "calc(100% / 2)",
-              md: "calc(100% / 3 - 40px)",
-              lg: "calc(100% / 4 - 40px)",
-              xl: "calc(100% / 6 - 40px)",
-            }}
-            mb={4}
-            spacing={4}
-            justify="center"
-            align="center"
-          >
-            <Box
-              as="img"
-              src={skill.icon}
-              boxSize="32px"
-              color="#A3A3A3"
-              _hover={{ color: "white", transform: "scale(1.1)" }}
-              transition="all 0.3s ease"
-            />
-            <Text fontSize="20px" fontWeight="400" color="white">
-              {skill.name}
-            </Text>
-          </HStack>
-        ))}
-      </Flex>
-    </Box>
-  );
-};
+    <section id="skills" className="py-24 sm:py-32">
+      <Reveal>
+        <h2 className="text-sm uppercase tracking-[0.2em] text-accent">
+          Skills
+        </h2>
+        <p className="mt-3 max-w-xl text-3xl font-semibold tracking-tight sm:text-4xl">
+          What I reach for day to day.
+        </p>
+      </Reveal>
 
-export default Skills;
+      <div className="mt-16 grid gap-4 sm:grid-cols-2">
+        {skillGroups.map((group, i) => (
+          <Reveal
+            key={group.category}
+            delay={i * 0.08}
+            className="rounded-2xl border border-border bg-surface p-6"
+          >
+            <h3 className="font-mono text-xs uppercase tracking-widest text-muted">
+              {group.category}
+            </h3>
+            <ul className="mt-5 flex flex-wrap gap-3">
+              {group.skills.map((skill) => (
+                <li
+                  key={skill.name}
+                  className="flex items-center gap-2 rounded-full border border-border bg-background px-3 py-2 text-sm transition-colors hover:border-accent hover:text-accent"
+                >
+                  <skill.icon size={15} />
+                  {skill.name}
+                </li>
+              ))}
+            </ul>
+          </Reveal>
+        ))}
+      </div>
+    </section>
+  );
+}

@@ -1,60 +1,61 @@
-import { Box, Flex, HStack, Stack, Link, Text } from "@chakra-ui/react";
+"use client";
+
 import { useEffect, useState } from "react";
-import { FaArrowCircleUp } from "react-icons/fa";
+import { ArrowUp } from "lucide-react";
+import { socials } from "@/lib/data";
 
-interface Props {
-  scrollToTop: () => void;
-}
-
-const Footer = ({ scrollToTop }: Props) => {
-  const [time, setTime] = useState<string>("");
+export function Footer() {
+  const [time, setTime] = useState("");
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      const currentTime = new Date().toLocaleString("en-US", {
-        hour: "2-digit",
-        minute: "2-digit",
-        hour12: true, // Ensures the time is in 12-hour format with AM/PM
-      });
-      setTime(currentTime);
-    }, 1000); // Update time every second
-
-    return () => clearInterval(interval); // Cleanup interval on component unmount
+    const update = () =>
+      setTime(
+        new Date().toLocaleString("en-US", {
+          hour: "2-digit",
+          minute: "2-digit",
+          hour12: true,
+        })
+      );
+    update();
+    const interval = setInterval(update, 1000);
+    return () => clearInterval(interval);
   }, []);
-  return (
-    <Box mt={{ base: "116px", md: "200px", lg: "253px" }} mb="15px">
-        <HStack onClick={scrollToTop} justify="flex-end">
-          <FaArrowCircleUp color="#AAAAAA" size="26px" />
-          <FaArrowCircleUp color="#AAAAAA" size="26px" />
-        </HStack>
-      <Flex align="flex-end" justify="space-between" mt="18px">
-        <HStack gap="32px">
-          <Text>© {new Date().getFullYear()} </Text>
-          <Text>{time}</Text>
-        </HStack>
-        <Stack
-          direction={{ base: "column", md: "row" }}
-          gap={{ base: "4px", md: "30px", lg: "52px" }}
-        >
-          <Link
-            href="https://www.linkedin.com/in/desmond-egya/"
-            target="_blank"
-          >
-            LINKEDIN
-          </Link>
-          <Link href="https://x.com/DesmondEgya" target="_blank">
-            X/TWITTER
-          </Link>
-          <Link href="https://instagram.com/desmond_egya" target="_blank">
-            INSTAGRAM
-          </Link>
-          <Link href="https://github.com/desegya" target="_blank">
-            GITHUB
-          </Link>
-        </Stack>
-      </Flex>
-    </Box>
-  );
-};
 
-export default Footer;
+  const scrollToTop = () =>
+    window.scrollTo({ top: 0, behavior: "smooth" });
+
+  return (
+    <footer className="border-t border-border py-8">
+      <button
+        type="button"
+        onClick={scrollToTop}
+        aria-label="Back to top"
+        className="ml-auto flex items-center gap-1 text-muted transition-colors hover:text-accent"
+      >
+        <ArrowUp size={16} />
+        <ArrowUp size={16} />
+      </button>
+
+      <div className="mt-4 flex flex-col items-start justify-between gap-4 text-sm text-muted sm:flex-row sm:items-end">
+        <div className="flex gap-6">
+          <span>© {new Date().getFullYear()} Desmond Egya</span>
+          <span className="font-mono">{time || " "}</span>
+        </div>
+
+        <div className="flex flex-wrap gap-5">
+          {socials.map((social) => (
+            <a
+              key={social.label}
+              href={social.href}
+              target="_blank"
+              rel="noreferrer"
+              className="uppercase tracking-wide transition-colors hover:text-foreground"
+            >
+              {social.label}
+            </a>
+          ))}
+        </div>
+      </div>
+    </footer>
+  );
+}
