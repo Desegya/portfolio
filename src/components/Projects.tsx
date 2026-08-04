@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { ArrowUpRight, Github, Hammer } from "lucide-react";
+import { ArrowUpRight, Github, Hammer, Sparkles } from "lucide-react";
 import { Reveal } from "./Reveal";
 import { projects } from "@/lib/data";
 
@@ -48,7 +48,12 @@ export function Projects() {
                   </div>
                 )}
                 <div className="flex flex-1 flex-col justify-center">
-                  <div className="flex flex-wrap gap-2">
+                  <div className="flex flex-wrap items-center gap-2">
+                    {project.launchingSoon && (
+                      <span className="flex items-center gap-1 rounded-full border border-accent/40 px-3 py-1 font-mono text-xs text-accent">
+                        <Sparkles size={11} /> Launching soon
+                      </span>
+                    )}
                     {project.tags.map((tag) => (
                       <span
                         key={tag}

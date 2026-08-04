@@ -34,6 +34,7 @@ export interface Project {
   liveUrl?: string;
   githubUrl?: string;
   comingSoon?: boolean;
+  launchingSoon?: boolean;
 }
 
 export const projects: Project[] = [
@@ -47,11 +48,11 @@ export const projects: Project[] = [
     liveUrl: "https://www.atpb.org",
   },
   {
-    name: "More work coming soon",
+    name: "EventLight",
     description:
-      "I'm currently between write-ups — the next case study lands here once it's ready to show properly.",
-    tags: [],
-    comingSoon: true,
+      "A modern event discovery platform — browse and filter events by category, date, and location, save the ones you care about, or list your own. Built solo, front to back.",
+    tags: ["React", "TypeScript", "Chakra UI", "Django"],
+    launchingSoon: true,
   },
   {
     name: "More work coming soon",
@@ -59,6 +60,41 @@ export const projects: Project[] = [
       "Another project in progress. Check back soon, or reach out if you want the details before it's posted.",
     tags: [],
     comingSoon: true,
+  },
+];
+
+export interface ExperienceEntry {
+  company: string;
+  role: string;
+  description: string;
+  tags: string[];
+  href?: string;
+  current?: boolean;
+}
+
+export const experience: ExperienceEntry[] = [
+  {
+    company: "Bucks",
+    role: "Full-time Software Engineer",
+    description:
+      "Building and maintaining a mobile banking app end-to-end — customer app, internal admin tools, and the API behind both.",
+    tags: ["React Native", "Next.js", "Express", "MongoDB", "Redis"],
+    href: "https://apps.apple.com/us/app/bucks-borderless-banking/id6757264502",
+    current: true,
+  },
+  {
+    company: "Talim",
+    role: "Software Engineer",
+    description:
+      "Part of the team building a school management platform — grading, attendance, and real-time chat across a teacher portal, student portal, and mobile app.",
+    tags: ["Next.js", "NestJS", "MongoDB", "Socket.IO"],
+  },
+  {
+    company: "FarmConnect",
+    role: "Backend Engineer",
+    description:
+      "Contributed to a fintech platform for agriculture — loans, payroll, and wallet features, as part of a larger engineering team.",
+    tags: ["NestJS", "TypeScript"],
   },
 ];
 

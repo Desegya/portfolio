@@ -33,9 +33,10 @@ export function Hero() {
         className="mt-16 flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-end"
       >
         <p className="max-w-sm text-sm leading-relaxed text-muted">
-          I design and build web and mobile products end-to-end — from the
-          database up to the pixels. Currently open to full-time roles and
-          freelance work.
+          Most people call me Dezzi. I design and build web and mobile
+          products end-to-end — from the database up to the pixels.
+          Currently building at Bucks, with room open for freelance work on
+          the side.
         </p>
 
         <a
