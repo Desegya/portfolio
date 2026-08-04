@@ -55,9 +55,9 @@ export const projects: Project[] = [
     launchingSoon: true,
   },
   {
-    name: "assess-iq",
+    name: "Nightklass",
     description:
-      "An AI-assisted assessment platform for schools — upload course material and generate question banks, assessments, and study guides, powered by Claude.",
+      "A personal AI study coach for students — upload your notes, get a study plan built around your exam date, and test yourself with flashcards and quizzes along the way. No school sign-up required.",
     tags: ["Next.js", "NestJS", "PostgreSQL", "Claude API"],
     launchingSoon: true,
   },

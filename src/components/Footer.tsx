@@ -38,7 +38,7 @@ export function Footer() {
 
       <div className="mt-4 flex flex-col items-start justify-between gap-4 text-sm text-muted sm:flex-row sm:items-end">
         <div className="flex gap-6">
-          <span>© {new Date().getFullYear()} Desmond Egya</span>
+          <span>© {new Date().getFullYear()} Dezzi</span>
           <span className="font-mono">{time || " "}</span>
         </div>
 

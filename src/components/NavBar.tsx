@@ -33,7 +33,7 @@ export function NavBar() {
     >
       <div className="mx-auto flex max-w-5xl items-center justify-between px-5 py-4 md:px-8">
         <a href="#top" className="text-sm font-semibold tracking-tight">
-          Desmond Egya
+          Dezzi
         </a>
 
         <nav className="hidden items-center gap-8 text-sm text-muted md:flex">
