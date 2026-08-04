@@ -1,69 +1,51 @@
-import { Flex, Image, Text, Box, Button, Link } from "@chakra-ui/react";
-import myPhoto from "../assets/me.jpeg";
+import Image from "next/image";
+import { ArrowUpRight } from "lucide-react";
+import { Reveal } from "./Reveal";
+import myPhoto from "@/assets/me.jpeg";
+import { email } from "@/lib/data";
 
-const About = () => {
+export function About() {
   return (
-    <Flex
-      id="about"
-      px={{base: 2, md: 0}}
-      pt={{ base: "150px", md: "200px", lg: "250px", xl: "250px" }}
-      direction={{ base: "column", md: "row" }}
-      justifySelf="center"
-      justify="space-around"
-      ml={{ base: "auto", xl: "373px" }}
-      mr={{ base: "auto", xl: "132px" }}
-      gap="86px"
-      maxW={{ base: "774px", xl: "none" }}
-    >
-      <Box flex="1" display="flex" justifyContent="center" alignItems="center">
-        <Image
-          alignSelf="flex-start"
-          boxSize="224px"
-          borderRadius="full"
-          src={myPhoto}
-          objectFit="cover"
-        />
-      </Box>
-      <Box flex="2" maxW="464px">
-        <Text
-          fontSize="14px"
-          lineHeight="20px"
-          color="#A3A3A3"
-          fontWeight="500"
-          textTransform="uppercase"
-        >
-          (About Me)
-        </Text>
-        <Text
-          lineHeight="28px"
-          letterSpacing="0.18px"
-          fontSize="18px"
-          fontWeight="400"
-        >
-          I'm Desmond Egya, a full-stack developer passionate about building
-          solutions that are as functional as they are impressive. When I'm not
-          coding like a machine or brainstorming new app ideas, you'll find me
-          leveling up in video games, experimenting with photography, or
-          watching football because, let's face it, football is life. My
-          development philosophy? Write clean code, solve real problems, and add
-          a touch of creativity. I'm the developer you want on your team if
-          you’re looking to hear users say, "This is exactly what I needed!"
-        </Text>
-        <Link href="mailto:egyadesmond@gmail.com">
-          <Button
-            mt="24px"
-            borderRadius="full"
-            bg="none"
-            variant="outline"
-            color="white"
-            border="1px solid white"
-          >
-            Let's talk
-          </Button>
-        </Link>
-      </Box>
-    </Flex>
-  );
-};
+    <section id="about" className="py-24 sm:py-32">
+      <div className="grid gap-10 sm:grid-cols-[auto_1fr] sm:items-center sm:gap-16">
+        <Reveal>
+          <Image
+            src={myPhoto}
+            alt="Portrait of Desmond Egya"
+            width={200}
+            height={200}
+            className="h-40 w-40 rounded-full object-cover ring-1 ring-border sm:h-52 sm:w-52"
+          />
+        </Reveal>
 
-export default About;
+        <Reveal delay={0.1}>
+          <h2 className="text-sm uppercase tracking-[0.2em] text-accent">
+            About me
+          </h2>
+          <p className="mt-4 max-w-xl text-lg leading-relaxed">
+            I&apos;m Desmond Egya — Dezzi to most people. Over the years
+            I&apos;ve gone from writing my first lines of React to
+            shipping production software full-time: mobile banking apps,
+            admin systems, and the APIs holding it all together. I care
+            about the parts that don&apos;t show — code that&apos;s easy
+            to reason about months later, systems that hold up under real
+            users, decisions made for the right reasons.
+          </p>
+          <p className="mt-4 max-w-xl leading-relaxed text-muted">
+            Outside of work, I&apos;m still a gamer, I still catch every
+            football match I can, I still lose an evening to a good movie,
+            and there&apos;s always a book somewhere in progress.
+            Different hobbies, same instinct — get curious, go deep,
+            finish the thing.
+          </p>
+          <a
+            href={`mailto:${email}`}
+            className="mt-6 inline-flex items-center gap-2 rounded-full border border-border px-5 py-2.5 text-sm transition-colors hover:border-accent hover:text-accent"
+          >
+            Let&apos;s talk <ArrowUpRight size={14} />
+          </a>
+        </Reveal>
+      </div>
+    </section>
+  );
+}
