@@ -23,16 +23,20 @@ export function About() {
             About me
           </h2>
           <p className="mt-4 max-w-xl text-lg leading-relaxed">
-            I&apos;m Desmond Egya, a full-stack developer passionate about
-            building solutions that are as functional as they are
-            impressive. When I&apos;m not coding like a machine or
-            brainstorming new app ideas, you&apos;ll find me leveling up in
-            video games, experimenting with photography, or watching
-            football — because, let&apos;s face it, football is life. My
-            development philosophy? Write clean code, solve real problems,
-            and add a touch of creativity. I&apos;m the developer you want
-            on your team if you&apos;re looking to hear users say,
-            &quot;This is exactly what I needed!&quot;
+            I&apos;m Desmond Egya — Dezzi to most people. I&apos;m a
+            full-stack developer who&apos;s spent the last few years
+            building things end-to-end: mobile banking apps, the admin
+            tools and APIs behind them, and the odd side project along the
+            way. These days I build full-time at Bucks, with stints on
+            Talim (a school platform) and FarmConnect (agric-fintech) too.
+            When I&apos;m not coding like a machine or brainstorming new
+            app ideas, you&apos;ll find me leveling up in video games,
+            experimenting with photography, or watching football —
+            because, let&apos;s face it, football is life. My development
+            philosophy? Write clean code, solve real problems, and add a
+            touch of creativity. I&apos;m the developer you want on your
+            team if you&apos;re looking to hear users say, &quot;This is
+            exactly what I needed!&quot;
           </p>
           <a
             href={`mailto:${email}`}
