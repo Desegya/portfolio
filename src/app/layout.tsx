@@ -38,6 +38,13 @@ export const metadata: Metadata = {
     siteName: "Desmond Egya",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Desmond Egya | Full Stack Developer",
+    description:
+      "Full-stack developer based in Nigeria, building web and mobile products end-to-end.",
+    creator: "@DesmondEgya",
+  },
   icons: {
     icon: "/icon.svg",
   },
