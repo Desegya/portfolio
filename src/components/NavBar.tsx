@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Download, Menu, X } from "lucide-react";
+import { Menu, X } from "lucide-react";
+// import { Download } from "lucide-react"; // re-enable when resume.pdf is added
 import { ThemeToggle } from "./ThemeToggle";
 
 const links = [
@@ -49,6 +50,7 @@ export function NavBar() {
         </nav>
 
         <div className="hidden items-center gap-4 md:flex">
+          {/* Resume link — re-enable once resume.pdf is added to /public
           <a
             href="/resume.pdf"
             download
@@ -57,6 +59,7 @@ export function NavBar() {
             <Download size={14} />
             Resume
           </a>
+          */}
           <ThemeToggle />
         </div>
 
@@ -85,6 +88,7 @@ export function NavBar() {
               {link.label}
             </a>
           ))}
+          {/* Resume link — re-enable once resume.pdf is added to /public
           <a
             href="/resume.pdf"
             download
@@ -94,6 +98,7 @@ export function NavBar() {
             <Download size={14} />
             Resume
           </a>
+          */}
         </nav>
       )}
     </header>

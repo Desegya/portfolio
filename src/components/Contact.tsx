@@ -1,4 +1,5 @@
-import { ArrowUpRight, Download } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
+// import { Download } from "lucide-react"; // re-enable when resume.pdf is added
 import { Reveal } from "./Reveal";
 import { email } from "@/lib/data";
 
@@ -20,6 +21,7 @@ export function Contact() {
           >
             {email} <ArrowUpRight size={14} />
           </a>
+          {/* Resume link — re-enable once resume.pdf is added to /public
           <a
             href="/resume.pdf"
             download
@@ -27,6 +29,7 @@ export function Contact() {
           >
             <Download size={14} /> Download resume
           </a>
+          */}
         </div>
       </Reveal>
     </section>
