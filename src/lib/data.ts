@@ -87,6 +87,8 @@ export const experience: ExperienceEntry[] = [
     description:
       "Part of the team building a school management platform — grading, attendance, and real-time chat across a teacher portal, student portal, and mobile app.",
     tags: ["Next.js", "NestJS", "MongoDB", "Socket.IO"],
+    href: "https://mytalim.com",
+
   },
   {
     company: "FarmConnect",
