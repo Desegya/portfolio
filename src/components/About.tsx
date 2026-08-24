@@ -41,13 +41,15 @@ function PhotoCard() {
         style={{ rotateX, rotateY, rotateZ: -4 }}
         className="w-fit rounded-2xl border-2 border-accent/30 bg-surface p-3 shadow-xl"
       >
-        <Image
-          src="/images/dezzi.jpeg"
-          alt="Portrait of Desmond Egya"
-          width={224}
-          height={264}
-          className="h-60 w-52 rounded-xl object-cover sm:h-64 sm:w-56"
-        />
+        <div className="relative h-60 w-52 overflow-hidden rounded-xl sm:h-64 sm:w-56">
+          <Image
+            src="/images/dezzi.jpeg"
+            alt="Portrait of Desmond Egya"
+            fill
+            sizes="(max-width: 640px) 208px, 224px"
+            className="object-cover"
+          />
+        </div>
       </motion.div>
     </div>
   );
