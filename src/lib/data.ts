@@ -79,7 +79,7 @@ export const experience: ExperienceEntry[] = [
     description:
       "Built the mobile app's frontend solo, from the ground up, and contribute across the admin dashboard and API for this mobile banking platform.",
     tags: ["React Native", "Next.js", "Express", "MongoDB", "Redis"],
-    href: "https://usebucks.co/download",
+    href: "https://usebucks.co",
   },
   {
     company: "Talim",
